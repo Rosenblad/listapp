@@ -77,3 +77,39 @@ body {
     border-bottom: 0;
   }
 }
+
+.back-button {
+  margin-bottom: 10px;
+}
+
+.glyphicon {
+  color: #ccc;
+  font-size: 20px;
+}
+.list-group-item:hover {
+  background-color: #f5f5f5;
+}
+.list-group-item:hover .glyphicon {
+  color: #ccc;
+}
+.glyphicon:hover {
+  color: #434343 !important;
+  cursor: pointer;
+}
+
+.create-new-list {
+  margin-bottom: 5px;
+}
+.ng-hide:not(.ng-hide-animate) {
+  /*display: block!important;*/
+}
+.new-list-errors {
+  visibility: hidden;
+}
+.showerrors {
+  visibility: visible!important;
+  color: red;
+  vertical-align: middle;
+  padding: 10px;
+  font-size: 12px;
+}

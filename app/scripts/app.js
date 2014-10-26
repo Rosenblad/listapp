@@ -2,30 +2,31 @@
 
 /**
  * @ngdoc overview
- * @name listappApp
+ * @name listApp4
  * @description
- * # listappApp
+ * # listapp4
  *
  * Main module of the application.
  */
 angular
-  .module('listappApp', [
+  .module('list4App', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'firebase'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/listsView.html',
+        controller: 'ListCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+      .when('/list/:listId', {
+        templateUrl: 'views/listItemsView.html',
+        controller: 'ListItemCtrl'
       })
       .otherwise({
         redirectTo: '/'

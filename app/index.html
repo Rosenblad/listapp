@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>ListApp4</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="listappApp">
+  <body ng-app="list4App">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -23,19 +23,11 @@
     <!-- Add your site or application content here -->
     <div class="container">
       <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">listapp</h3>
+        <h3 class="text-muted"><a href="#/">List4</a></h3>
       </div>
 
       <div ng-view=""></div>
 
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
     </div>
 
 
@@ -68,13 +60,17 @@
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/firebase-simple-login/firebase-simple-login.js"></script>
+    <script src="bower_components/mockfirebase/dist/mockfirebase.js"></script>
+    <script src="bower_components/angularfire/dist/angularfire.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/listcontroller.js"></script>
+        <script src="scripts/controllers/listItemController.js"></script>
         <!-- endbuild -->
 </body>
 </html>
