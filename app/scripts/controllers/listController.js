@@ -12,8 +12,7 @@ angular.module('list4App')
 				return;
 			}
 
-			// listId will be used in the list url.
-			// TBD: Make this url safe
+			// TBD: Make url safe
 			var listUrl = listName.replace(/ /g,'-');
 			
 	    sync.$set(listUrl, {name: listName, type: 'default'}).then(function(newChildRef) {
@@ -21,8 +20,7 @@ angular.module('list4App')
 	  		console.log('added record with id ' + newChildRef.name());
 			});
 		
-    	// Redirect to the list after it's created.
-			//$window.location.href = '/#/list/' + listId;
+			$window.location.href = '/#/list/' + listUrl;
 		};
 
 		$scope.inputHandler = function(event) {
