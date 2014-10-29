@@ -1,3 +1,3 @@
-ListApp
+Listapp
 =======
 AngularJS & Firebase ListApp
