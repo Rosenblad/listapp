@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('listApp')
+angular.module('list4App')
 	.controller('ListCtrl', ['$scope', '$window', '$firebase', function($scope, $window, $firebase) {
     var ref = new $window.Firebase('https://list-app-rosen.firebaseio.com/lists');
     var sync = $firebase(ref);
@@ -11,7 +11,7 @@ angular.module('listApp')
 			if (!listName) {
 				return;
 			}
-// test
+
 			// TBD: Make url safe
 			var listUrl = listName.replace(/ /g,'-');
 			
