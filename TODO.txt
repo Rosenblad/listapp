@@ -1,0 +1,21 @@
+edit list items and list names
+reorganize lists and list items with drag and drop
+mark the text when you double click to edit
+
+add a button to move checked items to bottom
+
+correctly filter the urlIds
+
+add loading function with firebase
+
+keyboard arrow navigation
+add ctrl - z functionality
+
+export lists
+Add option to sort lists by date.
+Add option to sort lists by name.
+If backspace is pressed in an empty list slot it should be removed.
+Save as checked if checked is pressed.
+
+Add user functionality for multiple users
+Add arrowkey functionality at list.html in order to navigate up and down the list.

@@ -86,19 +86,22 @@ body {
   color: #ccc;
   font-size: 20px;
 }
+.glyphicon:hover {
+  cursor: pointer;
+}
+.glyphicon-ok:hover {
+  color: #46b525;
+}
+.glyphicon-remove:hover {
+  color: #a94442;
+}
+
 .list-group-item:hover {
   background-color: #f5f5f5;
 }
-.list-group-item:hover .glyphicon {
-  color: #ccc;
-}
-.glyphicon:hover {
-  color: #434343 !important;
-  cursor: pointer;
-}
 
 .create-new-list {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .ng-hide:not(.ng-hide-animate) {
   /*display: block!important;*/
@@ -112,4 +115,17 @@ body {
   vertical-align: middle;
   padding: 10px;
   font-size: 12px;
+}
+
+.btn-group {
+  margin-bottom: 10px;
+}
+
+.list-item-text {
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.text-green {
+  color: #46b525;
 }
